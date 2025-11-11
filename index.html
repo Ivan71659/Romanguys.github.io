@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .image-grid {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .tooltip {
+      position: relative; 
+    }
+
+    .tooltip-text {
+      visibility: hidden;
+      width: 200px;
+      height: 20px;
+      background-color: black;
+      color:white;
+      text-align:center;
+      padding: 5px;
+      border-radius: 5px;
+      position:absolute; 
+      top: 102%;
+      left: 8%;
+      z-index: 1; 
+    } 
+
+    .tooltip:hover .tooltip-text {
+      visibility: visible;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background-color:darkkhaki;
+    }
+  </style>
+</head>
+<body>
+  <h1> The First Three Roman Emperors</h1>
+
+  <div class = "image-grid">
+    <div class = "tooltip">
+      <img src = "https://cdn-gx-aria-media.osp.opera.software/public/generated_images/6a43541d-b39c-11f0-9aa5-6d3b1f72f853/1762824024466/sample_0.jpg" width = "250" height = "250" onclick="window.location.href='Augustus.html'">
+      <p class = "tooltip-text">Augustus (27 BC - 14 AD)</p>
+    </div>
+
+    <div class = "tooltip">
+      <img src = "https://cdn-gx-aria-media.osp.opera.software/public/generated_images/6a43541d-b39c-11f0-9aa5-6d3b1f72f853/1762824175427/sample_0.jpg" width = "250" height = "250"onclick="window.location.href='Tiberus.html'">
+      <p class = "tooltip-text">Tiberus (14 AD - 37 AD)</p>
+    </div>
+
+    <div class = "tooltip">
+      <img src = "https://cdn-gx-aria-media.osp.opera.software/public/generated_images/6a43541d-b39c-11f0-9aa5-6d3b1f72f853/1762824228975/sample_0.jpg" width = "250" height = "250"onclick="window.location.href='Caligula.html'">
+      <p class = "tooltip-text">Caligula (37 AD - 41 AD) </p>
+    </div>
+  </div>
+</body>
+</html>
